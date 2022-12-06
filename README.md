@@ -2,7 +2,7 @@
 ![CI](https://github.com/ensdomains/offchain-resolver/actions/workflows/main.yml/badge.svg)
 
 
-This repository contains smart contracts and a node.js gateway server that together allow hosting ENS names offchain using [EIP 3668](https://eips.ethereum.org/EIPS/eip-3668) and [ENSIP 10](https://docs.ens.domains/ens-improvement-proposals/ensip-10-wildcard-resolution).
+This repository contains smart contracts and a node.js serverless gateway that together allow hosting ENS names offchain using [EIP 3668](https://eips.ethereum.org/EIPS/eip-3668) and [ENSIP 10](https://docs.ens.domains/ens-improvement-proposals/ensip-10-wildcard-resolution).
 
 ## Overview
 
