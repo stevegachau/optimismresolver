@@ -26,5 +26,5 @@ There are 5 main steps to using this in production:
  1. Optionally, write a new backend for the gateway that queries your own data store.
  2. Generate one or more signing keys. Secure these appropriately; posession of the signing keys makes it possible to forge name resolution responses!
  3. Start up a gateway server using your name database and a signing key. Publish it on a publicly-accessible URL.
- 4. Deploy `OffchainResolver` to Ethereum, providing it with the gateway URL and list of signing key addresses.
+ 4. Deploy `OffchainResolver` to Ethereum, providing it with the gateway URL (format: https://<GATEWAY URL>?sender={sender}&data={data}) and list of signing key addresses.
  5. Set the newly deployed resolver as the resolver for one or more ENS names.
