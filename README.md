@@ -1,4 +1,4 @@
-# ENS Offchain Resolver
+# ENS Optimism Resolver
 ![CI](https://github.com/ensdomains/offchain-resolver/actions/workflows/main.yml/badge.svg)
 
 
