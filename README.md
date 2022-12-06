@@ -23,7 +23,7 @@ The smart contract provides a resolver stub that implement CCIP Read (EIP 3668) 
 
 There are 5 main steps to using this in production:
 
- 1. Optionally, write a new backend for the gateway that queries your own data store. Or, use the JSON one and write your records to a JSON file in the format described in the gateway repository.
+ 1. Optionally, write a new backend for the gateway that queries your own data store.
  2. Generate one or more signing keys. Secure these appropriately; posession of the signing keys makes it possible to forge name resolution responses!
  3. Start up a gateway server using your name database and a signing key. Publish it on a publicly-accessible URL.
  4. Deploy `OffchainResolver` to Ethereum, providing it with the gateway URL and list of signing key addresses.
