@@ -28,7 +28,7 @@ var domainaddress;
 var domaincontract;
 var web3;
 var mongoaddr;
-web3 = new Web3('......'); //Optimism RPC url
+web3 = new Web3(''); //Optimism RPC url
 
 
 //ABI to decode the ETH Calldata
@@ -61,17 +61,17 @@ var ext = fulldomain[2];
 var name = sub+"."+tld+"."+ext;
 console.log(name);
 
-const privateKey = "......."; //privKey of signing address used during contract deploy of resolver contract on l2 
+const privateKey = ""; //privKey of signing address used during contract deploy of resolver contract on l2 
 const signer = new ethers.utils.SigningKey(privateKey);
 
 if (tld == "ecc"){ 
   
-domainaddress = "........."; //subdomain NFT on Optimism. 
-web3 = new Web3('.......'); //optimism RPC url
+domainaddress = ""; //subdomain NFT on Optimism. 
+web3 = new Web3(''); //optimism RPC url
 const account = web3.eth.accounts.wallet.add(privateKey);
 web3.eth.defaultAccount = account.address;
 domaincontract = new web3.eth.Contract(domainabi, domainaddress, {
-    from: '........' //from address
+    from: '' //from address
     })
 }
 
